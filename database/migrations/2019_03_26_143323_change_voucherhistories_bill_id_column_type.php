@@ -13,9 +13,9 @@ class ChangeVoucherhistoriesBillIdColumnType extends Migration
      */
     public function up()
     {
-        Schema::table('voucherhistories', function (Blueprint $table) {
+        /*Schema::table('voucherhistories', function (Blueprint $table) {
             $table->string('bill_id',60)->change();
-        });
+        });*/
     }
 
     /**

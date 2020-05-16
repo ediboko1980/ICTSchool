@@ -198,9 +198,10 @@ $permission_fields = array(
    <form role="form" action="{{url('/permission/create')}}" method="post" enctype="multipart/form-data">
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
-<table style="width:100%" id="permission" class="table responsive table-bordered">
+<table style="width:100%" id="permissione" class="table responsive table-bordered">
   <thead>
     <tr>
+      {{$admin}}==={{$teacherd}}
       <th>Permissions</th>
      @if($admin=="yes")
      <th>Admin <input type="checkbox" id="checkAll"></th>
@@ -358,13 +359,12 @@ $permission_fields = array(
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-timepicker/0.5.2/js/bootstrap-timepicker.min.js"></script>
 <script>
 
-
 $( document ).ready(function() {
 
   $('#permissione').DataTable();
 
   $("#checkAll").change(function () {
-  //alert(34);
+  alert(34);
   //alert(JSON.stringify($("input:checkbox.cb-element").prop('checked', $(this).prop("checked"))));
     $("input:checkbox.cb-element").prop('checked', $(this).prop("checked")).change();
 });

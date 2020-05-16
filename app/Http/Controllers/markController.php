@@ -40,7 +40,7 @@ class markController extends BaseController {
 		if($class_code !=''){
            $sections = DB::table('section')->where('class_code',$class_code)->get();
 		}else{
-			$eections = array();
+			$sections = array();
 		}
 
 		$section   = Input::get('section');
@@ -53,7 +53,7 @@ class markController extends BaseController {
 			$exams = array();
 		}
 		//return View::Make('app.markCreate',compact('classes','subjects'));
-		return View('app.markCreate',compact('classes','subjects','class_code','section','session','exam','sections','exams'));
+		return View('app.markCreate',compact('classes','subjects','class_code','section','session','exam','exams','sections'));
 	}
 	public function m_index()
 	{

@@ -24,6 +24,10 @@ class UserTableSeeder extends Seeder {
 			Institute::create(array('name'=>'Ict Vision','establish'=>'2017','email'=>'info@ictinnovations.com','web' => 'http://ictvision.net/','phoneNo'=>'923125555555','address'=>'Khawar center Multan'));
 	    }
 
+            $permission_path = 'sql/permission.sql';
+                DB::unprepared(file_get_contents($permission_path));
+                $this->command->info('permission table seeded!');
+
 	      	/*$student_path = 'sql/student.sql';
         	DB::unprepared(file_get_contents($student_path));
         	$this->command->info('Student table seeded!');

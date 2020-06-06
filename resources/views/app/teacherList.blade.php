@@ -165,6 +165,7 @@
     $( document ).ready(function() {
         $('#studentList').dataTable({
           "sPaginationType": "bootstrap",
+          "scrollX": true
         });
         $(".datepicker2").datepicker( {
             format: " yyyy", // Notice the Extra space at the beginning

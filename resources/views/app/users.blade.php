@@ -249,6 +249,7 @@
         $( document ).ready(function() {
             $('#sectorList').dataTable({
                 "sPaginationType": "bootstrap",
+                "scrollX": true
             });
         });
     </script>

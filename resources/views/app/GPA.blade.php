@@ -238,6 +238,7 @@
 <script type="text/javascript">
     $( document ).ready(function() {
         $('#gpaList').dataTable();
+        "scrollX": true
     });
 </script>
 

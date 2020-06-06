@@ -279,6 +279,7 @@
     $('#classList').dataTable({
 
        "sPaginationType": "bootstrap",
+       "scrollX": true
     });
   });
 

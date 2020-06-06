@@ -164,6 +164,7 @@
   $( document ).ready(function() {
     $('#classList').dataTable({
         "sPaginationType": "bootstrap",
+        "scrollX": true
     });
   });
   </script>

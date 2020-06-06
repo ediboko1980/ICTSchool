@@ -225,6 +225,7 @@
                     'print'
                 ],
                  "sPaginationType": "bootstrap",
+                 "scrollX": true
             });
 
             $( "#btnPrint" ).click(function() {

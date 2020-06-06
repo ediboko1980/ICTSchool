@@ -238,6 +238,7 @@ $( document ).ready(function() {
             'print'
         ],
          "sPaginationType": "bootstrap",
+         "scrollX": true
        
     });
       $('#studentList').removeClass( 'display' ).addClass('table table-striped table-bordered');
